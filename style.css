@@ -1,0 +1,516 @@
+* {
+        margin: 0;
+        padding: 0;
+}
+
+body {
+        font-family: sans-serif;
+}
+
+.container {
+        max-width: 1140px;
+        margin: 0 auto;
+}
+
+.top_box {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+}
+
+.top {
+        min-height: 768px;
+        background: linear-gradient(0deg, #EBF3FB 8.84%, rgba(152, 195, 232, 0) 31.12%);
+}
+
+.list {
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        padding-top: 42px;
+}
+
+.top_heading {
+        width: 510px;
+        font-size: 64px;
+        color: #1F3F68;
+        font-weight: 300;
+        line-height: 74px;
+        letter-spacing: 0.04em;
+        margin-bottom: 32px;
+}
+
+.top_info {
+        padding-top: 115px;
+        flex-grow: 1;
+        background-image: url(./img/top_back.png);
+        background-repeat: no-repeat;
+        background-position: right center;
+        background-size: 44%;
+}
+
+.text {
+        font-size: 16px;
+        line-height: 26px;
+        color: #1F3F68;
+        opacity: 0.6;
+        letter-spacing: 0.05em;
+        /*margin-bottom: 30px;*/
+        на уроке не разобрали
+}
+
+.top_text {
+        width: 425px;
+}
+
+.text_project {
+        width: 75%;
+        margin: 32px auto 64px;
+        color: #222222;
+        opacity: 1;
+        text-align: center;
+}
+
+.text_content_block_footer {
+        font-weight: normal;
+        color: #FFFFFF;
+        /*margin-top: 32px;
+        margin-bottom: 96px;*/
+}
+
+.text_address_block_footer {
+        opacity: 1;
+}
+
+.text_copyright {
+        opacity: 0.4;
+}
+
+.top_button {
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+        letter-spacing: 0.04em;
+        color: #FFFFFF;
+        background: #5A98D0;
+        box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
+        border-radius: 10px;
+        padding: 15px 50px;
+        text-decoration: none;
+        display: inline-block;
+        margin-top: 71px;
+}
+
+
+
+
+.card_box {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 64px;
+        padding-bottom: 64px;
+}
+
+.card {
+        width: 359px;
+        padding: 44px 32px;
+        box-sizing: border-box;
+        background: #FFFFFF;
+        box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+}
+
+.card_link {
+        font-size: 14px;
+        line-height: 30px;
+        letter-spacing: 0.05em;
+        color: #5A98D0;
+        text-decoration: none;
+}
+
+.card_img {
+        align-self: center;
+        margin-bottom: 51px;
+}
+
+.heading {
+        font-size: 36px;
+        text-align: center;
+        font-weight: 300;
+        line-height: 46px;
+        letter-spacing: 0.05em;
+        color: #000000;
+}
+
+.heading-mini {
+        margin-bottom: 14px;
+        font-size: 20px;
+        line-height: 30px;
+        color: #1F3F68;
+        font-weight: normal;
+        letter-spacing: 0.05em;
+}
+
+.what-we-do {
+        padding-top: 64px;
+}
+
+
+
+
+.project {}
+
+.project__img {
+        width: 100%;
+}
+
+.project__text {
+        font-size: 32px;
+        line-height: 46px;
+        text-align: right;
+        letter-spacing: 0.05em;
+        color: #FFFFFF;
+        position: absolute;
+        top: 64px;
+        right: 64px;
+}
+
+.project__text_img {
+        font-size: 28px;
+        top: 32px;
+        left: 32px;
+        right: auto;
+}
+
+.project__item {
+        position: relative;
+        flex-grow: 1;
+}
+
+.project__item_margin {
+        margin-right: 32px;
+}
+
+.project__parent {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 32px;
+}
+
+
+.button {
+        background: #5A98D0;
+        box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+        border-radius: 10px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+        color: #FFFFFF;
+        text-transform: uppercase;
+}
+
+
+
+.footer {
+        background: #316099;
+        margin-top: 112px;
+}
+
+.heading_footer {
+        width: 340px;
+        font-weight: normal;
+        color: #FFFFFF;
+        margin-bottom: 32px;
+        text-align: left;
+}
+
+.header_info p {
+        /*страница контакты???*/
+        width: 425px;
+}
+
+.content_block_footer {
+        width: 495px;
+}
+
+.menu-list {
+        /*исправить значение*/
+        padding: 1em;
+}
+
+.bottom_footer {
+        padding-top: 64px;
+        padding-bottom: 64px;
+}
+
+.devider {
+        opacity: 0.4;
+}
+
+.footer_list {
+        display: flex;
+        justify-content: space-between;
+        list-style-position: inside;
+        /*padding-top: 64px;*/
+}
+
+.footer__list {
+        list-style-type: none;
+        margin-right: 32px;
+        display: flex;
+        flex-grow: 1;
+        flex-basis: 33.3333%;
+}
+
+.footer__list:first-child::before {
+        content: '1.';
+        display: block;
+        margin-right: 18px;
+}
+
+.footer__list.footer__list:nth-child(2n)::before {
+        content: '2.';
+        display: block;
+        margin-right: 18px;
+}
+
+.footer__list:last-child::before {
+        content: '3.';
+        display: block;
+        margin-right: 18px;
+}
+
+.top_footer {
+        padding-top: 91px;
+        padding-bottom: 96px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+}
+
+.bottom_text {
+        padding-top: 64px;
+}
+
+.f_button {
+        background: #5A98D0;
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+        letter-spacing: 0.04em;
+        color: #FFFFFF;
+        font-weight: normal;
+        padding: 15px 80px;
+        text-decoration: none;
+        /*display: inline-block;*/
+        border: none;
+        white-space: nowrap;
+}
+
+
+/*Стилистика для планшета и моб.устройств*/
+/*@media (max-width: 1024px) {*/
+@media (max-width: 1140px) {
+
+        .container {
+                padding-left: 32px;
+                padding-right: 32px;
+        }
+
+        .top_info {
+                background-position: right 280px;
+        }
+
+
+        .card_box {
+                flex-direction: column;
+                align-items: center;
+        }
+
+        .card {
+                margin-bottom: 32px;
+        }
+
+        .footer {
+                margin-top: 109px;
+        }
+
+        .top_footer {
+                padding-top: 47px;
+                padding-bottom: 64px;
+                /*justify-content: space-around;*/
+        }
+
+
+        .top_footer,
+        .bottom_footer {
+                padding-left: 92px;
+                padding-right: 92px;
+        }
+
+        .heading_footer {
+                width: 100%;
+        }
+
+        .content_block_footer {
+                /*либо же задать это значение в десктопном варианте*/
+                /*width: 50%;*/
+                padding-right: 50px;
+        }
+
+        .f_button {
+                padding: 5px 30px;
+        }
+
+        .footer_list {
+                flex-direction: column;
+        }
+
+        .footer__list {
+                margin-bottom: 24px;
+        }
+
+        .bottom_text {
+                padding-top: 40px;
+        }
+}
+
+@media (max-width: 667px) {
+
+        .list {
+                padding-top: 24px;
+        }
+
+        .top {
+                min-height: 376px;
+                padding-bottom: 41px;
+                box-sizing: border-box;
+        }
+
+        .top_info {
+                padding-top: 36px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-image: none;
+        }
+
+        .top_heading {
+                width: 100%;
+                font-size: 32px;
+                line-height: 37px;
+                text-align: center;
+                margin-bottom: 12px;
+        }
+
+        .top_text {
+                width: 100%;
+                text-align: center;
+        }
+
+        .top_button {
+                font-size: 12px;
+                padding: 0 8px;
+        }
+
+        .heading {
+                font-size: 24px;
+                line-height: 28px;
+        }
+
+        .what-we-do {
+                padding-top: 48px;
+        }
+
+        .card_box {
+                padding-top: 32px;
+        }
+
+        .card {
+                width: 100%;
+        }
+
+        .text_project {
+                width: 100%;
+        }
+
+        .project__text {
+                font-size: 16px;
+                line-height: 19px;
+                top: 16px;
+                right: 16px;
+        }
+
+        .project__text_img {
+                left: 16px;
+        }
+
+        .project__parent {
+                flex-direction: column;
+                margin-top: 16px;
+        }
+
+        .project__item_margin {
+                margin-right: 0;
+                margin-bottom: 16px;
+        }
+
+        .footer {
+                margin-top: 64px;
+        }
+
+
+        .top_footer {
+                display: flex;
+                flex-direction: column;
+                padding-top: 18px;
+                padding-bottom: 41px;
+        }
+
+        .content_block_footer {
+                width: 100%;
+                padding-right: 0;
+                text-align: center;
+                padding-bottom: 40px;
+        }
+
+        .heading_footer {
+                text-align: center;
+                line-height: 28.13px;
+                width: 75%;
+                margin: 0 auto 32px;
+        }
+
+        .top_footer,
+        .bottom_footer {
+                padding-left: 0;
+                padding-right: 0;
+        }
+
+        .container {
+                padding-left: 16px;
+                padding-right: 16px;
+        }
+
+        .bottom_text {
+                text-align: center;
+                padding-top: 20px;
+        }
+
+        .bottom_footer {
+                padding-top: 32px;
+                padding-bottom: 32px;
+        }
+
+        .footer__list {
+                line-height: 18.75px;
+                margin-bottom: 17px;
+        }
+
+        .f_button {
+                padding: 5px 15px;
+        }
+}
