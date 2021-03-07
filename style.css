@@ -4,7 +4,7 @@
 }
 
 body {
-        font-family: sans-serif;
+        font-family: "Roboto", "Arial", sans-serif;
 }
 
 .container {
@@ -40,6 +40,16 @@ body {
         margin-bottom: 32px;
 }
 
+.top_contacts_heading {
+        font-weight: 500;
+        font-size: 44px;
+        line-height: 74px;
+        text-align: center;
+        letter-spacing: 0.04em;
+        color: #FFFFFF;
+        padding-top: 50px;
+}
+
 .top_info {
         padding-top: 115px;
         flex-grow: 1;
@@ -47,6 +57,14 @@ body {
         background-repeat: no-repeat;
         background-position: right center;
         background-size: 44%;
+}
+
+.top_contacts_info {
+        margin-top: 45px;
+        background-image: url(./img/contacts_back.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-size: cover
 }
 
 .text {
@@ -83,6 +101,18 @@ body {
 
 .text_copyright {
         opacity: 0.4;
+}
+
+.top_contacts_text {
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 30px;
+        text-align: center;
+        letter-spacing: 0.04em;
+        color: rgba(255, 255, 255, 0.6);
+        width: 75%;
+        margin: 16px auto;
+        padding-bottom: 50px;
 }
 
 .top_button {
@@ -159,7 +189,9 @@ body {
 
 
 
-.project {}
+.project {
+        margin-bottom: 112px;
+}
 
 .project__img {
         width: 100%;
@@ -211,11 +243,8 @@ body {
         text-transform: uppercase;
 }
 
-
-
 .footer {
         background: #316099;
-        margin-top: 112px;
 }
 
 .heading_footer {
@@ -226,18 +255,8 @@ body {
         text-align: left;
 }
 
-.header_info p {
-        /*страница контакты???*/
-        width: 425px;
-}
-
 .content_block_footer {
         width: 495px;
-}
-
-.menu-list {
-        /*исправить значение*/
-        padding: 1em;
 }
 
 .bottom_footer {
@@ -310,6 +329,153 @@ body {
 }
 
 
+
+.main {
+        display: flex;
+        justify-content: center;
+        /*margin-bottom: 96px;*/
+        margin-top: 65px;
+}
+
+.contacts_block {
+        width: 43%;
+        margin-top: 100px;
+}
+
+.contacts_img {
+        width: 50%;
+        padding-bottom: 56px;
+}
+
+.heading_contacts {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 0.04em;
+        color: #1F3F68;
+        margin-bottom: 24px;
+}
+
+.heading_form {
+        margin-bottom: 48px;
+}
+
+.contacts_block_item {
+        margin-bottom: 40px;
+}
+
+.contacts_text {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 0.05em;
+        color: #1F3F68;
+        opacity: 0.6;
+        list-style-type: none;
+        width: 60%;
+        /*425px*/
+}
+
+.contacts_item {
+        list-style: url('img/phone.svg') inside;
+}
+
+.contacts_item .contacts_text::before {
+        content: '';
+        margin-left: 19px;
+}
+
+.contacts_item li:first-child {
+        padding-bottom: 16px;
+}
+
+.contacts_item a {
+        text-decoration: none;
+}
+
+.contacts_item .web {
+        list-style: url('img/web-site.svg') inside;
+}
+
+.contacts_item .email {
+        list-style: url('img/email.svg') inside;
+}
+
+/*
+.contacts_item .web::before {
+        content: '';
+        margin-left: 19px;
+}
+
+
+.contacts_item .email::before {
+        content: '';
+        margin-left: 19px;
+}
+*/
+
+.message_block {
+        flex-grow: 1;
+        background: #FFFFFF;
+        box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2);
+        border-radius: 10px;
+        padding: 56px 56px;
+}
+
+
+.form {
+        width: 100%;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 30px;
+        letter-spacing: 0.04em;
+        color: #1F3F68;
+        opacity: 0.2;
+        padding-left: 36px;
+        padding-top: 21px;
+        padding-bottom: 21px;
+        margin-bottom: 32px;
+        opacity: 0.4;
+        border: 1px solid #356EAD;
+        box-sizing: border-box;
+        border-radius: 10px;
+}
+
+.form_button {
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+        letter-spacing: 0.04em;
+        color: #FFFFFF;
+        background: #5A98D0;
+        box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+        border-radius: 10px;
+        padding: 23px 183px;
+        text-decoration: none;
+        display: inline-block;
+        margin-top: 40px;
+        width: 100%;
+        border-width: 0;
+}
+
+label {
+        display: inline-block;
+        padding-bottom: 8px;
+}
+
+.contacts_label {
+        font-size: 16px;
+        line-height: 30px;
+        letter-spacing: 0.04em;
+        color: #1F3F68;
+        opacity: 0.8;
+}
+
+.map {
+        margin-top: 96px;
+        margin-bottom: 112px;
+}
+
 /*Стилистика для планшета и моб.устройств*/
 /*@media (max-width: 1024px) {*/
 @media (max-width: 1140px) {
@@ -333,8 +499,8 @@ body {
                 margin-bottom: 32px;
         }
 
-        .footer {
-                margin-top: 109px;
+        .project {
+                margin-bottom: 109px;
         }
 
         .top_footer {
@@ -342,7 +508,6 @@ body {
                 padding-bottom: 64px;
                 /*justify-content: space-around;*/
         }
-
 
         .top_footer,
         .bottom_footer {
@@ -355,8 +520,6 @@ body {
         }
 
         .content_block_footer {
-                /*либо же задать это значение в десктопном варианте*/
-                /*width: 50%;*/
                 padding-right: 50px;
         }
 
@@ -375,7 +538,59 @@ body {
         .bottom_text {
                 padding-top: 40px;
         }
+
+        .map {
+                padding-left: 0;
+                padding-right: 0;
+                margin-top: 64px;
+                ;
+                margin-bottom: 64px;
+        }
+
+        .top_contacts_info {
+                margin-top: 28px;
+        }
+
+        .main {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-top: 65px;
+        }
+
+        .contacts_block {
+                align-self: center;
+                margin-top: 0;
+        }
+
+        .contacts_img {
+                width: 75%;
+                padding-bottom: 64px;
+        }
+
+        .contacts_text {
+                width: 70%;
+        }
+
+        .message_block {
+                margin-left: 96px;
+                margin-right: 96px;
+        }
+
+        .form_button {
+                margin-top: 26px;
+                padding: 23px 130px 23px 178px;
+        }
+
+        .heading_form {
+                margin-bottom: 24px;
+                width: 45%;
+        }
+
 }
+
+
+
 
 @media (max-width: 667px) {
 
@@ -410,6 +625,21 @@ body {
                 text-align: center;
         }
 
+        .top_contacts_text {
+                width: 100%;
+        }
+
+        .contacts_block {
+                width: 100%;
+                margin-top: 0;
+                margin-left: 24px;
+                margin-right: 24px;
+        }
+
+        .contacts_img {
+                width: 100%;
+        }
+
         .top_button {
                 font-size: 12px;
                 padding: 0 8px;
@@ -418,6 +648,15 @@ body {
         .heading {
                 font-size: 24px;
                 line-height: 28px;
+        }
+
+        .heading_form {
+                width: 100%;
+                margin-bottom: 31px;
+        }
+
+        label {
+                margin-bottom: 5px;
         }
 
         .what-we-do {
@@ -430,6 +669,10 @@ body {
 
         .card {
                 width: 100%;
+        }
+
+        .project {
+                margin-bottom: 64px;
         }
 
         .text_project {
@@ -456,11 +699,6 @@ body {
                 margin-right: 0;
                 margin-bottom: 16px;
         }
-
-        .footer {
-                margin-top: 64px;
-        }
-
 
         .top_footer {
                 display: flex;
@@ -511,5 +749,28 @@ body {
 
         .f_button {
                 padding: 5px 15px;
+        }
+
+        .map {
+                padding-left: 0;
+                padding-right: 0;
+                margin-top: 32px;
+                ;
+                margin-bottom: 32px;
+        }
+
+        .message_block {
+                margin-left: 0;
+                margin-right: 0;
+                padding: 36px;
+        }
+
+        .form {
+                margin-bottom: 20px;
+        }
+
+        .form_button {
+                margin-top: 26px;
+                padding: 15px 54px 15px 60px;
         }
 }
